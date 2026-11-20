@@ -61,6 +61,48 @@
                              easing="linear">
                 </a-animation>
             </a-box>
+
+            <!-- LIGHTS BABY LESSGOOO-->
+            <!-- Ambient-->
+            <a-entity
+                light="
+                    type: ambient;
+                    intensity: 0.2
+                "
+            ></a-entity>
+
+            <!-- Point light-->
+            <!-- <a-entity
+                light="
+                    type: point;
+                    intensity: 0.8;
+                    distance: 10;
+                    castShadow: true;
+                "
+                position="0 2 1.5"
+                animation="
+                    property: light.intensity;
+                    from: 0.8;
+                    to: 0;
+                    loop: true;
+                    dir: alternate;
+                    dur: 5000;
+                    easing: easeInOutCubic
+                "
+             ></a-entity> -->
+            
+             <!--Spot Light-->
+             <a-entity
+                light="
+                    type: spot;
+                    target: #orange-box;
+                    color: #C40070;
+                    angle: 30;
+                    penumbra: 0.1;
+                    castShadow: true;
+                "
+                position="0 3 1"
+             ></a-entity>
         </a-scene>
     </body>
 </html>
