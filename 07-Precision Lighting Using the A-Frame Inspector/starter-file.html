@@ -48,6 +48,46 @@
         <a-entity gltf-model="#ssl" position="2 1.2 0" rotation="0 180 0">
         </a-entity>
 
+        <!-- Red Light -->
+         <a-entity
+            id="Red-Light"
+            position="-0.642 1.710 0.144"
+            light="
+                color: #CC0000;
+                distance: 0.2;
+                intensity: 4;
+                type: point;
+            "
+         ></a-entity>
+
+         <!-- Light Bulb-->
+         <a-entity
+            id="Light-Bulb"
+            position="0.9631 2.00201 0.00166"
+            light="
+                color: #FFCC00;
+                distance: 4;
+                intensity: 4;
+                type: point;
+                decay: 2;
+            "
+         ></a-entity>
+
+         <!-- Light Cone -->
+         <a-entity
+            id="Light-Cone"
+            position="0.97107 1.55284 0.0224"
+            light="
+                color: #FFCC00;
+                intensity: 2;
+                type: spot;
+                decay: 2;
+                angle: 45;
+                penumbra: 0.3
+            "
+            rotation="-90 0 0"
+         ></a-entity>
+
     </a-scene>
 </body>
 </html>
