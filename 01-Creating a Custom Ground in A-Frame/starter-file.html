@@ -13,6 +13,21 @@
             <img id="floor" src="assets/concrete_floor_damaged_01_4k.blend/textures/concrete_floor_damaged_01_diff_4k.jpg">
             <img id="floor-NRM" src="assets/concrete_floor_damaged_01_4k.blend/textures/concrete_floor_damaged_01_nor_gl_4k.png" alt="">
         </a-assets>
+        <a-plane
+            material="
+                color: #FFFFFF;
+                src: #floor;
+                repeat: 5 5;
+                normal-map: #floor-NRM;
+                normal-texture-repeat: 5 5;
+                roughness: 0.6
+                "
+            rotation="-90 0 0"
+            scale="10 10 1"
+
+        >
+
+        </a-plane>
     </a-scene>
 </body>
 </html>
